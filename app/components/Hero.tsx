@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-[var(--color-secondary)]">
+    <section className="w-full bg-[#f6f3ee] pt-32">
       <div className="max-w-6xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
         {/* LEFT TEXT */}
         <div className="animate-fadeIn">
@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
 
           <p className="mt-4 text-base max-w-lg">
-            Therapy for adults in Santa Monica and greater Los Angeles, rooted in
+            Therapy for adults in Santa Monica, rooted in
             compassion, evidence-based care, and real transformation.
           </p>
 

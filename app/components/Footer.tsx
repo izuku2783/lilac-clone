@@ -1,30 +1,35 @@
+"use client";
+
 export default function Footer() {
   return (
-    <footer className="bg-[#f7f3ec] py-20 px-10 md:px-20">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
+    <footer className="footer-section">
+      <div className="container footer-grid">
+        {/* Column 1 */}
         <div>
-          <h3 className="font-bold text-xl mb-4">Lilac Template</h3>
-          <p>123 Example Road</p>
-          <p>Minneapolis, MN</p>
-          <p className="mt-4 underline">email@example.com</p>
+          <h3 className="footer-title">Dr. Maya Reynolds, PsyD</h3>
+          <p className="footer-text">
+            Trauma-informed therapy for adults navigating anxiety, burnout, and
+            perfectionism.
+          </p>
         </div>
 
+        {/* Column 2 */}
         <div>
-          <h3 className="font-bold text-xl mb-4">Hours</h3>
-          <p>Monday – Friday</p>
-          <p>10am – 6pm</p>
+          <h3 className="footer-heading">Location</h3>
+          <p className="footer-text">Santa Monica, California</p>
+          <p className="footer-text">In-person + Telehealth (CA)</p>
         </div>
 
+        {/* Column 3 */}
         <div>
-          <h3 className="font-bold text-xl mb-4">Find</h3>
-          <p className="underline">Home</p>
-          <p className="underline">Contact</p>
-          <p className="underline">Blog</p>
+          <h3 className="footer-heading">Contact</h3>
+          <p className="footer-text underline">maya@example.com</p>
+          <p className="footer-text underline">(310) 555-0199</p>
         </div>
       </div>
 
-      <p className="text-center text-xs mt-20 opacity-70">
-        All Rights Reserved © 2026 Lilac Clone
+      <p className="footer-bottom">
+        © {new Date().getFullYear()} Dr. Maya Reynolds. All rights reserved.
       </p>
     </footer>
   );

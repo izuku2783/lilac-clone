@@ -1,16 +1,21 @@
+"use client";
+
 export default function CTA() {
   return (
-    <section className="bg-[#6d6a3d] text-white py-32 text-center">
-      <h2 className="text-6xl font-bold">Get started today.</h2>
+    <section className="cta-section" id="contact">
+      <div className="cta-inner fade-in">
+        <h2 className="cta-title">Start Feeling Like Yourself Again</h2>
 
-      <p className="mt-6 max-w-xl mx-auto">
-        Ready to take the first step towards a happier, healthier you? Contact
-        me to book your first session.
-      </p>
+        <p className="cta-text">
+          If you’re ready to move beyond survival mode and begin healing with
+          support, I’d be honored to work with you. Therapy can be the space to
+          breathe, reflect, and grow.
+        </p>
 
-      <button className="mt-12 border border-white px-12 py-4 hover:bg-white hover:text-[#6d6a3d] transition-all duration-300">
-        Get In Touch →
-      </button>
+        <a href="#" className="cta-button">
+          Get in Touch →
+        </a>
+      </div>
     </section>
   );
 }

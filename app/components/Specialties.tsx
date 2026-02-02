@@ -22,7 +22,7 @@ const specialties = [
 
 export default function Specialties() {
   return (
-    <section className="w-full bg-[var(--color-secondary)]">
+    <section className="w-full w-full bg-[#eef2ee] py-24" id="specialties">
       <div className="max-w-6xl mx-auto px-6 py-24">
         {/* HEADING */}
         <h2 className="text-4xl md:text-5xl text-center">

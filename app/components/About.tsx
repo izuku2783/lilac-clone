@@ -1,25 +1,49 @@
+"use client";
+
+import Image from "next/image";
+
 export default function About() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 bg-[#e7e1d7] py-32 px-10 md:px-20">
-      <div>
-        <h2 className="text-6xl font-bold">Hi, I’m Lilac.</h2>
+    <section className="about-section bg-[#f3ede4]">
+      <div className="container about-grid">
+        {/* LEFT TEXT */}
+        <div className="fade-in">
+          <h2 className="section-title-left">Hi, I’m Dr. Maya Reynolds</h2>
 
-        <p className="mt-6 text-lg max-w-lg">
-          I’m committed to providing a safe and supportive environment where we
-          can explore your thoughts, feelings, and behaviors.
-        </p>
+          <p className="about-text">
+            I’m a licensed clinical psychologist in Santa Monica, California,
+            offering therapy for adults navigating anxiety, trauma, burnout, and
+            perfectionism.
+          </p>
 
-        <button className="mt-10 border border-[#243b1d] px-10 py-3 hover:bg-[#243b1d] hover:text-white transition-all duration-300">
-          Let’s Chat →
-        </button>
-      </div>
+          <p className="about-text">
+            My approach is warm, collaborative, and grounded — blending
+            evidence-based care like CBT and EMDR with mindfulness and body-based
+            techniques to support real healing.
+          </p>
 
-      <div className="flex justify-center mt-12 md:mt-0">
-        <img
-          src="/images/about.jpg"
-          className="w-[420px] h-[520px] rounded-full object-cover"
-          alt="About"
-        />
+          <p className="about-text">
+            Together, we’ll create a space where you can slow down, feel safe,
+            and move forward with clarity and confidence.
+          </p>
+
+          <a href="#contact" className="primary-button">
+            Work With Me →
+          </a>
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="fade-up about-image-wrap">
+          <div className="about-image">
+            <Image
+              src="/images/doc.jpg"
+              alt="Dr. Maya Reynolds portrait"
+              width={600}
+              height={700}
+              className="object-cover"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
