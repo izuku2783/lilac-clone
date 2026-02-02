@@ -1,10 +1,29 @@
 import "./globals.css";
-import { DM_Sans } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 
-const dmSans = DM_Sans({
+/* Google Fonts Setup */
+
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-heading",
   weight: ["400", "500", "600", "700"],
 });
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["400", "500", "600"],
+});
+
+/* SEO Metadata (Maya Reynolds) */
+
+export const metadata = {
+  title: "Dr. Maya Reynolds, PsyD | Therapy in Santa Monica, CA",
+  description:
+    "Dr. Maya Reynolds offers trauma-informed therapy for anxiety, burnout, and perfectionism in Santa Monica, California.",
+};
+
+/* Root Layout Component */
 
 export default function RootLayout({
   children,
@@ -13,7 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>{children}</body>
+      <body className={`${playfair.variable} ${inter.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

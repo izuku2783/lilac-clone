@@ -1,10 +1,199 @@
 @import "tailwindcss";
 
-/* Lilac base styling */
+/* ----------------------------
+   THEME COLORS (Part 2 Palette)
+----------------------------- */
+:root {
+  --primary: #1f3b2c;
+  --secondary: #f6f3ee;
+  --accent: #c8a96a;
+}
+
+/* Global body */
 body {
-  margin: 0;
-  padding: 0;
-  background: #f7f3ec;
-  color: #243b1d;
   font-family: system-ui, sans-serif;
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+/* ----------------------------
+   ANIMATIONS
+----------------------------- */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fade-up {
+  animation: fadeUp 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----------------------------
+   HERO SECTION
+----------------------------- */
+.hero-section {
+  background: var(--secondary);
+  padding: 6rem 1.5rem;
+}
+
+.hero-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.hero-text {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+}
+
+.hero-subtext {
+  margin-top: 1rem;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.primary-button {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 0.9rem 1.6rem;
+  border: 1px solid var(--primary);
+  transition: 0.3s;
+}
+
+.primary-button:hover {
+  background: var(--primary);
+  color: white;
+  transform: scale(1.05);
+}
+
+.hero-image {
+  width: 380px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 260px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----------------------------
+   SPECIALTIES SECTION
+----------------------------- */
+.specialties-section {
+  padding: 6rem 1.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  margin-top: 1rem;
+  text-align: center;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+}
+
+.specialties-grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .specialties-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Separate Boxes */
+.specialty-card {
+  background: white;
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  padding: 2.5rem;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.specialty-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.specialty-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.specialty-card p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.specialty-image {
+  margin-top: 2.5rem;
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.specialty-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
