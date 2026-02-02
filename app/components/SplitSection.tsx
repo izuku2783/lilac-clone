@@ -17,7 +17,7 @@ export default function SplitSupport() {
         {/* RIGHT TEXT */}
         <div className="flex flex-col justify-center px-10 md:px-20 py-16">
           <h2 className="text-5xl md:text-6xl font-semibold text-[#213017] leading-tight">
-            You don’t have to do this <space/>
+            You don’t have to do this{" "}
             <span className="italic font-medium">alone.</span>
           </h2>
 
