@@ -1,27 +1,45 @@
-export default function SplitSection() {
+import Image from "next/image";
+
+export default function SplitSupport() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
-      <img
-        src="/images/split.jpg"
-        className="w-full h-full object-cover"
-        alt="Support"
-      />
+    <section className="bg-[#dde6df] border-y border-[#213017]">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
+        {/* LEFT IMAGE */}
+        <div className="relative w-full h-[650px]">
+          <Image
+            src="/images/support.jpg"
+            alt="Peaceful support moment"
+            fill
+            className="object-cover"
+          />
+        </div>
 
-      <div className="bg-[#c9c7d5] p-20 flex flex-col justify-center">
-        <h2 className="text-6xl font-bold leading-tight">
-          You don’t have to do this <br /> alone.
-        </h2>
+        {/* RIGHT TEXT */}
+        <div className="flex flex-col justify-center px-10 md:px-20 py-16">
+          <h2 className="text-5xl md:text-6xl font-semibold text-[#213017] leading-tight">
+            You don’t have to do this <space/>
+            <span className="italic font-medium">alone.</span>
+          </h2>
 
-        <ul className="mt-10 space-y-4 text-lg">
-          <li>• Persistent sadness or hopelessness</li>
-          <li>• Trouble focusing or making decisions</li>
-          <li>• Difficulty maintaining relationships</li>
-          <li>• Feeling exhausted or overwhelmed</li>
-        </ul>
+          <p className="mt-8 text-lg text-[#2f3a28] leading-relaxed max-w-lg">
+            Anxiety, burnout, and life transitions can feel isolating — but
+            healing happens in connection.
+          </p>
 
-        <button className="mt-12 border border-[#243b1d] px-10 py-3 hover:bg-[#243b1d] hover:text-white transition-all duration-300">
-          Work With Me →
-        </button>
+          <p className="mt-6 text-lg text-[#2f3a28] leading-relaxed max-w-lg">
+            Dr. Maya Reynolds offers evidence-based therapy in Santa Monica, CA to
+            help you feel grounded, supported, and empowered through life’s
+            hardest seasons.
+          </p>
+
+          {/* BULLETS */}
+          <ul className="mt-10 space-y-3 text-[#213017] text-base">
+            <li>• Persistent stress or emotional overwhelm</li>
+            <li>• Difficulty maintaining relationships</li>
+            <li>• Feeling stuck during a major transition</li>
+            <li>• Wanting more balance and clarity in life</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

@@ -11,12 +11,12 @@ const specialties = [
   {
     title: "Anxiety & Perfectionism",
     text: "Support for high-functioning adults struggling with constant overthinking, pressure, self-criticism, and anxiety that won’t turn off.",
-    img: "https://images.unsplash.com/photo-1520975958225-6d5a6a8f0f4b?q=80&w=1200&auto=format&fit=crop",
+    img: "/images/specialty2.jpg",
   },
   {
     title: "Burnout & Life Transitions",
     text: "Therapy for professionals navigating burnout, emotional exhaustion, major life changes, and the desire to reconnect with meaning and calm.",
-    img: "https://images.unsplash.com/photo-1526481280695-3c687fd5432c?q=80&w=1200&auto=format&fit=crop",
+    img: "/images/specialty3.jpg",
   },
 ];
 

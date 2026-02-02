@@ -7,6 +7,7 @@ import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import OurOffice from "./components/OurOffice";
 import GetInTouchSection from "./components/GetInTouchSection";
+import SplitSection from "./components/SplitSection";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <GetInTouchSection />
       <Specialties />
+      <SplitSection />
       <About />
       <OurOffice />
       <FAQ />

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="about-section bg-[#f3ede4]">
+    <section className="about-section" id="about">
       <div className="container about-grid">
         {/* LEFT TEXT */}
         <div className="fade-in">
